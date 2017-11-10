@@ -18,6 +18,8 @@
 *.sublime-project
 *.sublime-workspace
 ._*
+.vscode
+.eslintrc
 .cache
 .DS_Store
 .project
