@@ -1,24 +1,24 @@
 -
 	contacts = [
 	{
-	title: 'Serj.Korneev',
+	title: 'Kosianchuk_ds',
 	icon: 'skype',
-	link: '#'
+	link: 'skype:kosianchuk_ds?call'
 	},
 	{
-	title: 'Serj.Korneev@gmail.com',
+	title: 'Kosianchuk.d@gmail.com',
 	icon: 'envelope',
-	link: '#'
+	link: 'mailto:kosianchuk.d@gmail.com?call'
 	},
 	{
-	title: '8-999-999-9999',
+	title: '+38-095-445-72-04',
 	icon: 'phone',
-	link: '#'
+	link: 'skype:kosianchuk_ds?call'
 	},
 	{
-	title: 'Москва, ул. Берзарина',
+	title: 'Киев, ул. Дмитровская, 75',
 	icon: 'map_marker',
-	link: 'https://yandex.ru/maps/-/CZxW4Tzy'
+	link: '#'
 	}
 	]
 
@@ -30,7 +30,7 @@ section.l-contacts
 		ul.contacts__list
 			each contact in contacts
 				li.contacts__item
-					a.contacts__link(href= contact.link target="_blank")
+					a.contacts__link(href= contact.link)
 						svg.contacts__icon
 							use(xlink:href=`assets/img/sprite/sprite.svg#${contact.icon}`)
 						.contacts__text= contact.title
